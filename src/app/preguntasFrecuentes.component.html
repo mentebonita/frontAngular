@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>Preguntas Frecuentes</title>
+  <style>
+     :root {
+             --001: #414141;
+             --101: #898989;
+             --201: #E4E4E4;
+             --301: #FFFFFF;
+             --002: #151C32;
+             --102: #4A5A79;
+             --202: #A7AAB2;
+             --302: #D3D5D8;
+             --black: #000000;
+             --gris: #C4C4C4;
+             --gris_medio_claro: #F1F1F1;
+             --gris_oscuro: #5E5E5E;
+             --gris_blanco: #FFFFFF;
+             --gris_medio: #9A9A9A;
+             --gris_claro: #F1F1F1;
+             --small: 15px;
+             --medium: 20px;
+             --long: 50px;
+        }
+        .navbar-collapse{
+            flex-grow: 0;
+            margin-right: 15px;
+        }
+        .navbar-brand{
+            margin-left:0px;
+            padding-left: 15px;
+            padding-right: 10px;
+        }
+        @media (min-width:768px){
+            .navbar-brand{
+            margin-right: -300px;
+            padding-left: 15px;
+            padding-right: 0px;
+            }
+        }
+        @media (min-width:992px){
+            .navbar-brand{
+            margin-right: -50px;
+            padding-left: 15px;
+            padding-right: 0px;
+            }
+        }
+        @media (min-width:1280px){
+            .navbar-brand{
+            margin-right: -100px;
+            padding-left: 15px;
+            padding-right: 0px;
+            }
+        }
+        .dropdown-country{
+            padding-left: 10px ;
+
+        }
+        #header img {
+        width: 40px;
+        object-fit: cover;
+        }
+        #fondo  img{
+        max-width: 100%;
+        height: auto;
+        margin-left: -12px;
+       }
+
+       #fondo{
+        background: #E6E2D4;
+       }
+       .footer-clean {
+        padding:50px 0;
+        background-color:#151C32;
+        color: #fff;;
+        }
+
+        .footer-clean h3 {
+        margin-top:0;
+        margin-bottom:12px;
+        font-weight:bold;
+        font-size:16px;
+        }
+
+        .footer-clean ul {
+        padding:0;
+        list-style:none;
+        line-height:1.6;
+        font-size:14px;
+        margin-bottom:0;
+        }
+
+        .footer-clean ul a {
+        color:inherit;
+        text-decoration:none;
+        opacity:0.8;
+        }
+
+        .footer-clean ul a:hover {
+        opacity:1;
+        }
+
+        .footer-clean .item.social {
+        text-align:center;
+        }
+
+        @media (max-width:767px) {
+        .footer-clean .item {
+            text-align:center;
+            padding-bottom:20px;
+        }
+        }
+
+        @media (max-width: 768px) {
+        .footer-clean .item.social {
+            text-align:center;
+        }
+        }
+
+        .footer-clean .item.social > a {
+        font-size:24px;
+        width:40px;
+        height:40px;
+        line-height:40px;
+        display:inline-block;
+        text-align:center;
+        border-radius:50%;
+        border:1px solid #ccc;
+        margin-left:10px;
+        margin-top:22px;
+        color:inherit;
+        opacity:0.75;
+        }
+
+        .footer-clean .item.social > a:hover {
+        opacity:0.9;
+        }
+
+        @media (max-width:991px) {
+        .footer-clean .item.social > a {
+            margin-top:40px;
+        }
+        }
+
+        @media (max-width:767px) {
+        .footer-clean .item.social > a {
+            margin-top:10px;
+        }
+        }
+
+        .footer-clean .copyright {
+        margin-top:14px;
+        margin-bottom:0;
+        font-size:13px;
+        opacity:0.6;
+        }
+  </style>
+</head>
+
+<body>
+ <!--Menu-->
+ <section>
+  <nav id="header" class="navbar navbar-expand-lg navbar-dark " style="background: #E6E2D4;">
+      <div class="container ps-1 ps-lg-3 ps-sm-0">
+          <a class="navbar-brand ps-4 ps-sm-0" href="#"><img src="../assets/Iconos/headerMB.svg" alt="logo" class="w-100 h-100"></a>
+
+              <li class="nav-link dropdown-country nav-item dropdown " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 <a style="color:#151C32" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="../assets/Iconos/icons8-mexico-48_preview_rev_1.png" alt=""></a>
+
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#" style="color:#151C32" ><img src="../assets/images/icons8-peru-48.png"/></a></li>
+                      <li><a class="dropdown-item" href="#" style="color:#151C32"><img src="../assets/images/chile_logo.jpg"/></a></li>
+                  </ul>
+
+              </li>
+              <button class="navbar-toggler bg-dark ms-4 mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+      <div class="collapse navbar-collapse ps-4 ps-sm-0" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="color:#151C32">Inicio</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" style="color:#151C32" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Programas
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#" style="color:#151C32">Individuales</a></li>
+                      <li><a class="dropdown-item" href="#" style="color:#151C32">Grupales</a></li>
+
+                  </ul>
+            </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#" style="color:#151C32">Precios</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#" style="color:#151C32">Especialistas</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#" style="color:#151C32">Blog</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#" style="color:#151C32">Marketplace</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a style="color:#AC6A4D" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     <u>Ingresar</u>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#" style="color:#151C32" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Iniciar sesión</a></li>
+                      <li><a class="dropdown-item" href="#" style="color:#151C32">Registrarse</a></li>
+                  </ul>
+              </li>
+          </ul>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button class="btn me-md-2 text-white" type="button" style="background: #AC6A4D;">Reservar</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+</section>
+<!--/Menu-->
+  <!--Contenedor Preguntas-->
+  <section id="fondo">
+    <div class="container">
+
+            <div class="row"></div><br/><br/><br/><br/><br/><br/>
+            <div class="row  px-0">
+
+                <div class="ps-4 ps-sm-0 col-12 col-md-12  col-lg-9 offset-lg-3">
+
+                    <h2 class="col-9 col-lg-12" style="font-family: 'Montserrat';font-style: normal;font-weight: 400;font-size: 80px;color:#AC6A4D;">Preguntas frecuentes</h2>
+
+
+                </div>
+            </div>
+            <div class="row"></div><br/><br/>
+            <div class="row"></div><br/><br/>
+            <div class="row"></div><br/><br/>
+            <div class="row"></div><br/><br/>
+            <div class="row"></div><br/><br/>
+            <div class="row"></div>
+            <div class="row"></div>
+
+
+        </div>
+
+
+</section>
+  <!--7Contenedor Preguntas -->
+  <!--Preguntas frecuentes-->
+  <section id="preguntasFrecuentes" class="mx-5 py-4">
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col-12 offset-0 offset-lg-1 col-lg-11">
+          <h3 style="font-family: 'Montserrat';font-weight: 400;font-size: 50px;line-height: 61px;">Nombre de la categoría: </h3>
+         </div>
+        <div class="offset-1 col-11 pb-5">
+          <div class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent1">
+            <p style="font-family: 'Montserrat';font-weight: 700;font-size: 30px;">1. ¿Lorem Ipsum is simply dummy text
+              of the printing and typesetting?<img src="../assets/Iconos/Vector_abajo.jpg" class="ms-3" /></p>
+
+          </div>
+
+
+          <div class="collapse" id="navbarToggleExternalContent1">
+            <div class="text-start col-11">
+              <p style="font-family: 'Montserrat';font-weight: 600;font-size: 22px;line-height: 27px;">Lorem Ipsum is
+                simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.</p>
+
+            </div>
+          </div>
+          <div class="col-12 " style="border: 2px solid;width:92%; background:#151C32;"></div>
+        </div>
+        <div class="offset-1 col-11 pb-5">
+          <div class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent2">
+            <p style="font-family: 'Montserrat';font-weight: 700;font-size: 30px;">2. ¿Lorem Ipsum is simply dummy text
+              of the printing and typesetting?<img src="../assets/Iconos/Vector_abajo.jpg" class="ms-3" /></p>
+
+          </div>
+
+
+          <div class="collapse" id="navbarToggleExternalContent2">
+            <div class="text-start col-11">
+              <p style="font-family: 'Montserrat';font-weight: 600;font-size: 22px;line-height: 27px;">Lorem Ipsum is
+                simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.</p>
+
+            </div>
+          </div>
+          <div style="border: 2px solid;width: 92%; background: #151C32;"></div>
+        </div>
+        <div class="offset-1 col-11 pb-5">
+          <div class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent3">
+            <p style="font-family: 'Montserrat';font-weight: 700;font-size: 30px;">3. ¿Lorem Ipsum is simply dummy text
+              of the printing and typesetting?<img src="../assets/Iconos/Vector_abajo.jpg" class="ms-3" /></p>
+
+          </div>
+
+
+          <div class="collapse" id="navbarToggleExternalContent3">
+            <div class="text-start col-11">
+              <p style="font-family: 'Montserrat';font-weight: 600;font-size: 22px;line-height: 27px;">Lorem Ipsum is
+                simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.</p>
+
+            </div>
+          </div>
+          <div style="border: 2px solid;width: 92%; background: #151C32;"></div>
+        </div>
+        <div class="offset-1 col-11 pb-5">
+          <div class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent4">
+            <p style="font-family: 'Montserrat';font-weight: 700;font-size: 30px;">4. ¿Lorem Ipsum is simply dummy text
+              of the printing and typesetting?<img src="../assets/Iconos/Vector_abajo.jpg" class="ms-3" /></p>
+
+          </div>
+
+
+          <div class="collapse" id="navbarToggleExternalContent4">
+            <div class="text-start col-11">
+              <p style="font-family: 'Montserrat';font-weight: 600;font-size: 22px;line-height: 27px;">Lorem Ipsum is
+                simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.</p>
+
+            </div>
+          </div>
+          <div style="border: 2px solid;width: 92%; background: #151C32;"></div>
+        </div>
+
+        <div class="offset-1 col-11">
+              <h3 style="font-family: 'Montserrat';font-weight: 400;font-size: 50px;line-height: 61px;">Nombre de la categoría: </h3>
+        </div>
+        <div class="offset-1 col-11 pb-5">
+          <div class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent5">
+            <p style="font-family: 'Montserrat';font-weight: 700;font-size: 30px;">1. ¿Lorem Ipsum is simply dummy text
+              of the printing and typesetting?<img src="../assets/Iconos/Vector_abajo.jpg" class="ms-3" /></p>
+
+          </div>
+
+
+          <div class="collapse" id="navbarToggleExternalContent5">
+            <div class="text-start col-11">
+              <p style="font-family: 'Montserrat';font-weight: 600;font-size: 22px;line-height: 27px;">Lorem Ipsum is
+                simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.</p>
+
+            </div>
+          </div>
+          <div style="border: 2px solid;width: 92%; ; background: #151C32;"></div>
+        </div>
+        <div class="offset-1 col-11 pb-5">
+          <div class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent6">
+            <p style="font-family: 'Montserrat';font-weight: 700;font-size: 30px;">2. ¿Lorem Ipsum is simply dummy text
+              of the printing and typesetting?<img src="../assets/Iconos/Vector_abajo.jpg" class="ms-3" /></p>
+
+          </div>
+
+
+          <div class="collapse" id="navbarToggleExternalContent6">
+            <div class="text-start col-11">
+              <p style="font-family: 'Montserrat';font-weight: 600;font-size: 22px;line-height: 27px;">Lorem Ipsum is
+                simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.</p>
+
+            </div>
+          </div>
+          <div style="border: 2px solid;width: 92%; background: #151C32;"></div>
+        </div>
+        <div class="offset-1 col-11 pb-5">
+          <div class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent7">
+            <p style="font-family: 'Montserrat';font-weight: 700;font-size: 30px;">3. ¿Lorem Ipsum is simply dummy text
+              of the printing and typesetting?<img src="../assets/Iconos/Vector_abajo.jpg" class="ms-3" /></p>
+
+          </div>
+
+
+          <div class="collapse" id="navbarToggleExternalContent7">
+            <div class="text-start col-11">
+              <p style="font-family: 'Montserrat';font-weight: 600;font-size: 22px;line-height: 27px;">Lorem Ipsum is
+                simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.</p>
+
+            </div>
+          </div>
+          <div style="border: 2px solid;width: 92%; background: #151C32;"></div>
+        </div>
+        <div class="offset-1 col-11 pb-5">
+          <div class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent8">
+            <p style="font-family: 'Montserrat';font-weight: 700;font-size: 30px;">4. ¿Lorem Ipsum is simply dummy text
+              of the printing and typesetting?<img src="../assets/Iconos/Vector_abajo.jpg" class="ms-3" /></p>
+
+          </div>
+
+
+          <div class="collapse" id="navbarToggleExternalContent8">
+            <div class="text-start col-11">
+              <p style="font-family: 'Montserrat';font-weight: 600;font-size: 22px;line-height: 27px;">Lorem Ipsum is
+                simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book.</p>
+
+            </div>
+          </div>
+          <div style="border: 2px solid;width: 92%; ; background: #151C32;"></div>
+          </div>
+          <div class="offset-1 col-11 pb-5">
+            <div class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent9">
+              <p style="font-family: 'Montserrat';font-weight: 700;font-size: 30px;">5. ¿Lorem Ipsum is simply dummy text
+                of the printing and typesetting?<img src="../assets/Iconos/Vector_abajo.jpg" class="ms-3" /></p>
+
+            </div>
+
+
+            <div class="collapse" id="navbarToggleExternalContent9">
+              <div class="text-start col-11">
+                <p style="font-family: 'Montserrat';font-weight: 600;font-size: 22px;line-height: 27px;">Lorem Ipsum is
+                  simply dummy text of the printing and typesetting
+                  industry. Lorem Ipsum has been the industry's standard dummy text
+                  ever since the 1500s, when an unknown printer took a galley of
+                  type and scrambled it to make a type specimen book.</p>
+
+              </div>
+            </div>
+            <div style="border: 2px solid;width: 92%; ; background: #151C32;"></div>
+          </div>
+          <div class="offset-1 col-11 pb-5">
+            <div class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent10">
+              <p style="font-family: 'Montserrat';font-weight: 700;font-size: 30px;">6. ¿Lorem Ipsum is simply dummy text
+                of the printing and typesetting?<img src="../assets/Iconos/Vector_abajo.jpg" class="ms-3" /></p>
+
+            </div>
+
+
+            <div class="collapse" id="navbarToggleExternalContent10">
+              <div class="text-start col-11">
+                <p style="font-family: 'Montserrat';font-weight: 600;font-size: 22px;line-height: 27px;">Lorem Ipsum is
+                  simply dummy text of the printing and typesetting
+                  industry. Lorem Ipsum has been the industry's standard dummy text
+                  ever since the 1500s, when an unknown printer took a galley of
+                  type and scrambled it to make a type specimen book.</p>
+
+              </div>
+            </div>
+            <div style="border: 2px solid;width: 92%; background: #151C32;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/Preguntas frecuentes-->
+  <!--Mas dudas-->
+  <section id="masDudas">
+    <div class="container-fluid" style="background:#4A5A79;height: 300px;">
+      <div class="row"></div></br></br></br></br>
+      <div class="row">
+        <div class="col-sm-6 col-md-11 col-lg-12">
+            <p class="fs-2 text-center text-white" style="font-family: 'Montserrat';font-style: normal;font-weight: 700;font-size: 30px;"><b>¿Aún tienes dudas? Te brindamos asesoría personalizada</b></p>
+        </div>
+
+        </div>
+        <div class="row">
+        <div class="col-sm-6 col-md-4 d-grid col-lg-2 mx-auto">
+            <button type="submit" class="btn  rounded " style="background: #AC6A4D;color:white;font-family: 'Montserrat';font-style: normal;font-weight: 700;font-size: 16px;"><b>Sí, ayúdenme</b></button>
+
+        </div>
+    </div>
+
+    </div>
+</section>
+<!--/Mas dudas-->
+  <!--Footer-->
+  <footer>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Servicios</h3>
+                        <ul>
+                            <li><a href="#">Psicología</a></li>
+                            <li><a href="#">Psiquiatría</a></li>
+                            <li><a href="#">Actividad física</a></li>
+                            <li><a href="#">Programas individuales</a></li>
+                            <li><a href="#">Programas grupales</a></li>
+                            <li><a href="#">Precios</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Conócenos</h3>
+                        <ul>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Especialistas</a></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                            <li><a href="#">Términos y condiciones</a></li>
+                            <li><a href="#">Políticas y privacidad</a></li>
+                            <li><a href="#">Políticas de cookies</a></li>
+                            <li><a href="#">Libro de reclamaciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Cultiva tu Mente Bonita</h3>
+                        <ul>
+                            <li><a href="#">Trabaja con nosotros</a></li>
+                            <li><a href="#">Información para empresas</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social">
+
+                        <img src="../assets/images/facebook.png" alt="">
+                        <img src="../assets/images/instagram.png" alt="">
+                        <img src="../assets/images/Group 117.png" alt="">
+                        <p class="copyright">Mente Bonita © 2022</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </footer>
+  <!--/Footer-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
