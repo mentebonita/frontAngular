@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Blog MB</title>
+    <style>
+        :root {
+             --001: #414141;
+             --101: #898989;
+             --201: #E4E4E4;
+             --301: #FFFFFF;
+             --002: #151C32;
+             --102: #4A5A79;
+             --202: #A7AAB2;
+             --302: #D3D5D8;
+             --black: #000000;
+             --gris: #C4C4C4;
+             --gris_medio_claro: #F1F1F1;
+             --gris_oscuro: #5E5E5E;
+             --gris_blanco: #FFFFFF;
+             --gris_medio: #9A9A9A;
+             --gris_claro: #F1F1F1;
+             --small: 15px;
+             --medium: 20px;
+             --long: 50px;
+        }
+        .navbar-collapse{
+            flex-grow: 0;
+            margin-right: 15px;
+        }
+        .navbar-brand{
+            margin-left:0px;
+            padding-left: 15px;
+            padding-right: 10px;
+        }
+        @media (min-width:768px){
+            .navbar-brand{
+            margin-right: -300px;
+            padding-left: 15px;
+            padding-right: 0px;
+            }
+        }
+        @media (min-width:992px){
+            .navbar-brand{
+            margin-right: -50px;
+            padding-left: 15px;
+            padding-right: 0px;
+            }
+        }
+        @media (min-width:1280px){
+            .navbar-brand{
+            margin-right: -100px;
+            padding-left: 15px;
+            padding-right: 0px;
+            }
+        }
+        .dropdown-country{
+            padding-left: 10px ;
+
+        }
+        #header img {
+        width: 40px;
+        object-fit: cover;
+        }
+        #fondo  img{
+        max-width: 100%;
+        height: auto;
+       }
+
+       #fondo{
+        background: linear-gradient(480deg, rgba(197, 158, 140, 0.8) 0%,
+        rgba(204, 157, 136, 0.5) 48.96%,
+        rgba(192, 133, 106, 0) 100%);
+       }
+
+       #caruselServicios img {
+      margin-top: 30px;
+      height: 80px;
+      margin-left: 160px;
+      border-radius: 30px;
+      padding-top: 80px;
+        }
+        #crecer img{
+      max-width: 100%;
+      height: auto;
+       }
+      #crecer .container-fluid {
+        max-width: 100%;
+        height: auto;
+       }
+       .footer-clean {
+        padding:50px 0;
+        background-color:#151C32;
+        color: #fff;;
+        }
+
+        .footer-clean h3 {
+        margin-top:0;
+        margin-bottom:12px;
+        font-weight:bold;
+        font-size:16px;
+        }
+
+        .footer-clean ul {
+        padding:0;
+        list-style:none;
+        line-height:1.6;
+        font-size:14px;
+        margin-bottom:0;
+        }
+
+        .footer-clean ul a {
+        color:inherit;
+        text-decoration:none;
+        opacity:0.8;
+        }
+
+        .footer-clean ul a:hover {
+        opacity:1;
+        }
+
+        .footer-clean .item.social {
+        text-align:center;
+        }
+
+        @media (max-width:767px) {
+        .footer-clean .item {
+            text-align:center;
+            padding-bottom:20px;
+        }
+        }
+
+        @media (max-width: 768px) {
+        .footer-clean .item.social {
+            text-align:center;
+        }
+        }
+
+        .footer-clean .item.social > a {
+        font-size:24px;
+        width:40px;
+        height:40px;
+        line-height:40px;
+        display:inline-block;
+        text-align:center;
+        border-radius:50%;
+        border:1px solid #ccc;
+        margin-left:10px;
+        margin-top:22px;
+        color:inherit;
+        opacity:0.75;
+        }
+
+        .footer-clean .item.social > a:hover {
+        opacity:0.9;
+        }
+
+        @media (max-width:991px) {
+        .footer-clean .item.social > a {
+            margin-top:40px;
+        }
+        }
+
+        @media (max-width:767px) {
+        .footer-clean .item.social > a {
+            margin-top:10px;
+        }
+        }
+
+        .footer-clean .copyright {
+        margin-top:14px;
+        margin-bottom:0;
+        font-size:13px;
+        opacity:0.6;
+        }
+    </style>
+  </head>
+  <body>
+        <!--Menu-->
+  <section>
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark " style="background: #C8A391;">
+        <div class="container ps-1 ps-lg-3 ps-sm-0">
+            <a class="navbar-brand ps-4 ps-sm-0" href="#"><img src="../assets/Iconos/headerMB.svg" alt="logo" class="w-100 h-100"></a>
+
+                <li class="nav-link dropdown-country nav-item dropdown " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   <a style="color:#151C32" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="../assets/Iconos/icons8-mexico-48_preview_rev_1.png" alt=""></a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#" style="color:#151C32" ><img src="../assets/images/icons8-peru-48.png"/></a></li>
+                        <li><a class="dropdown-item" href="#" style="color:#151C32"><img src="../assets/images/chile_logo.jpg"/></a></li>
+                    </ul>
+
+                </li>
+                <button class="navbar-toggler bg-dark ms-4 mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        <div class="collapse navbar-collapse ps-4 ps-sm-0" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="../app/inicioMB.component.html" style="color:#151C32">Inicio</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" style="color:#151C32" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Programas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#" style="color:#151C32">Individuales</a></li>
+                        <li><a class="dropdown-item" href="#" style="color:#151C32">Grupales</a></li>
+
+                    </ul>
+              </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:#151C32">Precios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:#151C32">Especialistas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:#151C32">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:#151C32">Marketplace</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a style="color:#FFFFFF" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       <u>Ingresar</u>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#" style="color:#151C32" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Iniciar sesión</a></li>
+                        <li><a class="dropdown-item" href="#" style="color:#151C32">Registrarse</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn me-md-2 text-white" type="button" style="background: #AC6A4D;">Reservar</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+</section>
+  <!--/Menu-->
+    <!--Contenedor title-->
+    <section id="fondo">
+        <div class="container">
+
+                <div class="row"></div><br/><br/>
+                <div class="row  px-0">
+
+                    <div class="ps-4 ps-lg-0 col-12 col-md-12  col-lg-12">
+                        <h2 class="col-9 col-lg-12" style="font-family: Montserrat;font-size: 60px;color: #151C32;">Título del blog </h2>
+                        <p class="col-9" style="font-family: Montserrat;font-weight: bold;font-size: 30px;line-height: 37px;">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                             Lorem Ipsum has been the industry's standard dummy text ever since the...</p>
+                        <button class="btn  btn-lg text-white" style="background: #151C32;width: 193px;">Leer</button>
+
+                    </div>
+                </div>
+                <div class="row"></div><br/><br/>
+                <div class="row"></div><br/><br/>
+                <div class="row"></div><br/><br/>
+
+
+            </div>
+
+
+    </section>
+    <!--/Contenedor title-->
+    <!--Carrusel Servicios-->
+  <section id="caruselServicios">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="../assets/Iconos/Rectangle 7.jpg" class=" w-75" alt="Carrusel 1">
+          <div class="carousel-caption  mt-5">
+            <a class="btn shadow me-3"
+              style="background: #FFFFFF;color: #151C32;border-radius: 30px; width: 190px;"><u>Psicología</u></a>
+            <a class="btn shadow me-3"
+              style="background: #FFFFFF;color: #151C32;border-radius: 30px; width: 190px;"><u>Estrés</u></a>
+            <a class="btn shadow me-3"
+              style="background: #FFFFFF;color: #151C32;border-radius: 30px; width: 190px;"><u>Pareja</u></a>
+            <a class="btn shadow me-3"
+              style="background: #FFFFFF;color: #151C32;border-radius: 30px; width: 190px;"><u>Alimentación</u></a>
+
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="../assets/Iconos/Rectangle 7.jpg" class="d-block w-75" alt="Carrusel 2">
+          <div class="carousel-caption  mt-5">
+            <a class="btn shadow me-3"
+              style="background: #FFFFFF;color: #151C32;border-radius: 30px; width: 190px;"><u>Familia</u></a>
+            <a class="btn shadow me-3"
+              style="background: #FFFFFF;color: #151C32;border-radius: 30px; width: 190px;"><u>Actividad</u></a>
+            <a class="btn shadow me-3"
+              style="background: #FFFFFF;color: #151C32;border-radius: 30px; width: 190px;"><u>Arte</u></a>
+            <a class="btn shadow me-3"
+              style="background: #FFFFFF;color: #151C32;border-radius: 30px; width: 190px;"><u>Tanotologia</u></a>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/Iconos/Rectangle 7.jpg" class="d-block w-75" alt="Carrusel 3">
+          <div class="carousel-caption  mt-5">
+            <a class="btn shadow me-3"
+              style="background: #FFFFFF;color: #151C32;border-radius: 30px; width: 190px;"><u>Astrología</u></a>
+            <a class="btn shadow me-3"
+              style="background: #FFFFFF;color: #151C32;border-radius: 30px; width: 190px;"><u>Psiquiatría</u></a>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" class="bg-dark" data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev">
+        <div class="rounded-circle pt-2 pe-1" style="background: #E6E2D4;width:50px; height: 50%;">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </div>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <div class="rounded-circle pt-2 ps-1" style="background: #E6E2D4;width:50px; height: 50%;">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </div>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <!--/Carrusel Servicios-->
+   <!--Novedades-->
+   <section id="novedadesBlog">
+    <div class="container">
+      <div class="row">
+        <div class="row">
+          <div class="col-12">
+            <h1 style="color: #151C32;font-family: 'Montserrat'; font-size: 60px;line-height: 73px;">Novedades</h1>
+          </div>
+          <div class="col-12  col-md-6 col-lg-4">
+            <div class="">
+              <img src="../assets/images/blog_img1.svg" class="card-img-top w-0" alt=" Blog 1">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="btn w-50" style="background: #151C32;color: #FFFFFF;"> Leer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-4">
+            <div class="">
+              <img src="../assets/images/blog_alimentos.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="btn w-50" style="background: #151C32;color: #FFFFFF;"> Leer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 ps-4 ps-lg-0  col-md-6 col-lg-4">
+            <h5 class="card-title"
+              style="font-family: 'Montserrat'; font-style: normal;font-weight: 700;font-size: 30px;">The point of using
+              Lorem Ipsum is that it has a more-or-less.</h5>
+            <p class="card-text"
+              style="font-family: 'Montserrat'; font-style: normal;font-weight: 600;font-size: 22px;">It is a long
+              established fact that a reader will be distracted by readable ...</p>
+            <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+            <h5 class="card-title pt-3">The point of using Lorem Ipsum is that it has a more-or-less.</h5>
+            <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+            <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h1 style="color: #151C32;font-family: 'Montserrat'; font-size: 60px;line-height: 73px;">Noticias sobre estrés</h1>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_adicciones.svg" class="card-img-top w-0" alt=" Blog 1">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_img1.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_alimentos.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_violencia.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_depresion.svg" class="card-img-top w-0" alt=" Blog 1">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_duelo.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_vidasocial.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_artes.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+  <!--/Novedades-->
+  <!--Un paso a crecer-->
+  <section>
+    <div id="crecer" class="container-fluid  d-flex d-block" style="background:#E6E2D4;">
+        <div class="row offset-0 offset-lg-0 ps-0 ps-5-lg-5">
+                <div class="col-12  col-sm-12 col-md-12  col-lg-6 pb-2">
+                    <h1 class="text-lg-start text-md-center ps-5 ps-lg-0" style="font-family: Montserrat;font-size: 35px;color: #151C32;">Estás a un paso <em style="font-family: Bodoni 72;">de crecer</em></h1>
+                    <button type="button" class="col-5 offset-4 col-sm-4 col-md-4 col-lg-3 offset-lg-0 btn rounded text-white" style="background: #AC6A4D;font-family: Montserrat;font-weight: bold;">Reservar</button>
+
+                </div>
+                <div class="col-12  col-sm-12 col-md-12 col-lg-6 px-0">
+                    <img src="../assets/images/crecer.svg" alt="Crecer conmigo"/>
+                </div>
+        </div>
+
+    </div>
+</section><br/>
+  <!--/Un paso a crecer-->
+  <!--Noticia alimentacion-->
+  <section>
+    <div class="container">
+      <div class="row">
+
+        <div class="row">
+          <div class="col-12">
+            <h1 style="color: #151C32;font-family: 'Montserrat'; font-size: 60px;line-height: 73px;">Noticias sobre
+              alimentación</h1>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_adicciones.svg" class="card-img-top w-0" alt=" Blog 1">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_img1.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_alimentos.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_violencia.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_depresion.svg" class="card-img-top w-0" alt=" Blog 1">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_duelo.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_vidasocial.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_artes.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+  <!--/Noticia alimentacion-->
+   <!--Banner comercial-->
+   <section>
+    <div class="container-fluid pr-0 pl-0" style="background:#AC6A4D;height: 170px;">
+        <div class="row px-0">
+                <div class="col-12 pt-3 pt-sm-3 col-lg-12 pt-md-5 pt-lg-5 px-lg-0">
+                    <h1 class="text-white text-center" style="font-family: Montserrat;font-size: 40px;">50% de descuento <em style="font-family: Bodoni 72;">en grupos de apoyo</em></h1>
+                </div>
+        </div>
+
+    </div>
+ </section><br/><br/><br/>
+<!--/Banner comercial-->
+<!--Noticia parejas-->
+<section>
+    <div class="container">
+      <div class="row">
+
+        <div class="row">
+          <div class="col-12">
+            <h1 style="color: #151C32;font-family: 'Montserrat'; font-size: 60px;line-height: 73px;">Noticias sobre
+              pareja</h1>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_adicciones.svg" class="card-img-top w-0" alt=" Blog 1">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_img1.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_alimentos.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_violencia.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_depresion.svg" class="card-img-top w-0" alt=" Blog 1">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_duelo.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_vidasocial.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-3">
+            <div class="">
+              <img src="../assets/images/blog_artes.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The point of using Lorem Ipsum is that it has a more</h5>
+                <p class="card-text">It is a long established fact that a reader will be distracted by readable ...</p>
+                <a href="#" class="" style="color: #151C32;"><u>Leer la nota</u></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section></br></br>
+  <!--/Noticia parejas-->
+  <!--Suscripcion-->
+  <section>
+    <div class="container">
+      <div class="row mx-auto pb-4 pb-sm-0">
+        <div class="col-12 col-lg-6 offset-lg-2 pb-4 pb-sm-0">
+          <input type="text" class="txt w-100" placeholder="Suscribete al newsletter con tu correo electronico" style="border:0px"></input>
+          <span style="border: 1px;border-color: black;"></span>
+        </div>
+        <div class="col-12 col-lg-3 ">
+          <button type="button" class="btn w-100 w-sm-50" style="background: #AC6A4D;color: #FFFFFF;"><b>Enviar</b></button>
+        </div>
+      </div>
+      <div class="row mx-auto">
+        <div class="col-2 col-lg-1  offset-0 offset-lg-2">
+          <input class="form-check-input rounded-circle" type="checkbox" value="" id="defaultCheck1">
+        </div>
+        <div class="col-10 col-lg-8">
+          <label class="form-check-label" for="defaultCheck1">
+            Acepto que Mente Bonita use mi informacion personal. <a href="#" > Politicas de privacidad</a>
+          </label>
+        </div>
+      </div>
+    </div>
+  </section></br></br></br></br></br></br>
+  <!--/Suscripcion-->
+  <footer>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Servicios</h3>
+                        <ul>
+                            <li><a href="#">Psicología</a></li>
+                            <li><a href="#">Psiquiatría</a></li>
+                            <li><a href="#">Actividad física</a></li>
+                            <li><a href="#">Programas individuales</a></li>
+                            <li><a href="#">Programas grupales</a></li>
+                            <li><a href="#">Precios</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Conócenos</h3>
+                        <ul>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Especialistas</a></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                            <li><a href="#">Términos y condiciones</a></li>
+                            <li><a href="#">Políticas y privacidad</a></li>
+                            <li><a href="#">Políticas de cookies</a></li>
+                            <li><a href="#">Libro de reclamaciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Cultiva tu Mente Bonita</h3>
+                        <ul>
+                            <li><a href="#">Trabaja con nosotros</a></li>
+                            <li><a href="#">Información para empresas</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social">
+
+                        <img src="../assets/images/facebook.png" alt="">
+                        <img src="../assets/images/instagram.png" alt="">
+                        <img src="../assets/images/Group 117.png" alt="">
+                        <p class="copyright">Mente Bonita © 2022</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </footer>
+<!--/Footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
