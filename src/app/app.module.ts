@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InicioPeruComponent } from './inicio-peru/inicio-peru.component';
 import { InicioPeruComponent } from './inicioPeru/inicioPeru.component';
 import { InicioMexicoComponent } from './inicioMexico/inicioMexico.component';
 import { BlogFinalComponent } from './blogFinal/blogFinal.component';
@@ -12,9 +11,45 @@ import { ContenedorTitleComponent } from './contenedorTitle/contenedorTitle.comp
 import { ProgramaIndividualComponent } from './programaIndividual/programaIndividual.component';
 import { ProgramaGrupalComponent } from './programaGrupal/programaGrupal.component';
 import { ApoyoEmpresasComponent } from './apoyoEmpresas/apoyoEmpresas.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { ContenidoBlogComponent } from './contenidoBlog/contenidoBlog.component';
+import { CrearunaCuentaComponent } from './crearunaCuenta/crearunaCuenta.component';
+import { DescuentoBannerComponent } from './descuentoBanner/descuentoBanner.component';
+import { EspecialistaComponent } from './especialista/especialista.component';
+import { GaleriaServiciosComponent } from './galeriaServicios/galeriaServicios.component';
+import { GrupoApoyoComponent } from './grupoApoyo/grupoApoyo.component';
+import { HorarioEspecialistaComponent } from './horarioEspecialista/horarioEspecialista.component';
+import { InformacionEspecialistaComponent } from './informacionEspecialista/informacionEspecialista.component';
+import { InicioEspecialistaComponent } from './inicioEspecialista/inicioEspecialista.component';
+import { LibroReclamacionesComponent } from './libroReclamaciones/libroReclamaciones.component';
+import { MarketplaceDetalleCompraComponent } from './marketplaceDetalleCompra/marketplaceDetalleCompra.component';
+import { MarketplaceGaleriaComponent } from './marketplaceGaleria/marketplaceGaleria.component';
+import { MarketplaceInicioComponent } from './marketplaceInicio/marketplaceInicio.component';
+import { EligeUnPlanComponent } from './eligeUnPlan/eligeUnPlan.component';
+import { PerfilComprarSesionesComponent } from './perfilComprarSesiones/perfilComprarSesiones.component';
+import { PerfilEspecialistaComponent } from './perfilEspecialista/perfilEspecialista.component';
+import { PlanyHorarioComponent } from './planyHorario/planyHorario.component';
+import { PoliticaCookiesComponent } from './politicaCookies/politicaCookies.component';
+import { PoliticaPrivacidadComponent } from './politicaPrivacidad/politicaPrivacidad.component';
+import { PopIniciarSesionComponent } from './popIniciarSesion/popIniciarSesion.component';
+import { PorqueElegirnosComponent } from './porqueElegirnos/porqueElegirnos.component';
+import { PreguntasFiltroFinalComponent } from './preguntasFiltroFinal/preguntasFiltroFinal.component';
+import { PreguntasFiltro6Component } from './preguntasFiltro6/preguntasFiltro6.component';
+import { PreguntasFrecuentesComponent } from './preguntasFrecuentes/preguntasFrecuentes.component';
+import { RecuperaTuContrasenaComponent } from './recuperaTuContrasena/recuperaTuContrasena.component';
+import { ReservarCitaFinalComponent } from './reservarCitaFinal/reservarCitaFinal.component';
+import { SesionesComponent } from './sesiones/sesiones.component';
+import { SuscripcionComponent } from './suscripcion/suscripcion.component';
+import { TerminosyCondicionesComponent } from './terminosyCondiciones/terminosyCondiciones.component';
+import { UnPasoCrecerComponent } from './unPasoCrecer/unPasoCrecer.component';
+import { UsuarioEspecialistaComponent } from './usuarioEspecialista/usuarioEspecialista.component';
+import { UsuarioInformesComponent } from './usuarioInformes/usuarioInformes.component';
+import { UsuarioMensajesComponent } from './usuarioMensajes/usuarioMensajes.component';
+import { UsuarioObjetivosComponent } from './usuarioObjetivos/usuarioObjetivos.component';
+import { UsuarioPagosComponent } from './usuarioPagos/usuarioPagos.component';
 
 @NgModule({
-  declarations: [								
+  declarations: [																					
     AppComponent,
     InicioPeruComponent,
       InicioPeruComponent,
@@ -24,7 +59,43 @@ import { ApoyoEmpresasComponent } from './apoyoEmpresas/apoyoEmpresas.component'
       ContenedorTitleComponent,
       ProgramaIndividualComponent,
       ProgramaGrupalComponent,
-      ApoyoEmpresasComponent
+      ApoyoEmpresasComponent,
+      CalendarComponent,
+      ContenidoBlogComponent,
+      CrearunaCuentaComponent,
+      DescuentoBannerComponent,
+      EspecialistaComponent,
+      GaleriaServiciosComponent,
+      GrupoApoyoComponent,
+      HorarioEspecialistaComponent,
+      InformacionEspecialistaComponent,
+      InicioEspecialistaComponent,
+      LibroReclamacionesComponent,
+      MarketplaceDetalleCompraComponent,
+      MarketplaceGaleriaComponent,
+      MarketplaceInicioComponent,
+      EligeUnPlanComponent,
+      PerfilComprarSesionesComponent,
+      PerfilEspecialistaComponent,
+      PlanyHorarioComponent,
+      PoliticaCookiesComponent,
+      PoliticaPrivacidadComponent,
+      PopIniciarSesionComponent,
+      PorqueElegirnosComponent,
+      PreguntasFiltroFinalComponent,
+      PreguntasFiltro6Component,
+      PreguntasFrecuentesComponent,
+      RecuperaTuContrasenaComponent,
+      ReservarCitaFinalComponent,
+      SesionesComponent,
+      SuscripcionComponent,
+      TerminosyCondicionesComponent,
+      UnPasoCrecerComponent,
+      UsuarioEspecialistaComponent,
+      UsuarioInformesComponent,
+      UsuarioMensajesComponent,
+      UsuarioObjetivosComponent,
+      UsuarioPagosComponent
    ],
   imports: [
     BrowserModule,
