@@ -38,7 +38,6 @@ import { PreguntasFiltro6Component } from './preguntasFiltro6/preguntasFiltro6.c
 import { PreguntasFrecuentesComponent } from './preguntasFrecuentes/preguntasFrecuentes.component';
 import { RecuperaTuContrasenaComponent } from './recuperaTuContrasena/recuperaTuContrasena.component';
 import { ReservarCitaFinalComponent } from './reservarCitaFinal/reservarCitaFinal.component';
-import { SesionesComponent } from './sesiones/sesiones.component';
 import { SuscripcionComponent } from './suscripcion/suscripcion.component';
 import { TerminosyCondicionesComponent } from './terminosyCondiciones/terminosyCondiciones.component';
 import { UnPasoCrecerComponent } from './unPasoCrecer/unPasoCrecer.component';
@@ -49,7 +48,7 @@ import { UsuarioObjetivosComponent } from './usuarioObjetivos/usuarioObjetivos.c
 import { UsuarioPagosComponent } from './usuarioPagos/usuarioPagos.component';
 
 @NgModule({
-  declarations: [																					
+  declarations: [
     AppComponent,
     InicioPeruComponent,
       InicioPeruComponent,
@@ -87,7 +86,6 @@ import { UsuarioPagosComponent } from './usuarioPagos/usuarioPagos.component';
       PreguntasFrecuentesComponent,
       RecuperaTuContrasenaComponent,
       ReservarCitaFinalComponent,
-      SesionesComponent,
       SuscripcionComponent,
       TerminosyCondicionesComponent,
       UnPasoCrecerComponent,
