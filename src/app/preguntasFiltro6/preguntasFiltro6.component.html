@@ -1,3 +1,524 @@
-<p>
-  preguntasFiltro6 works!
-</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <title>Preguntas filtros 6</title>
+    <style>
+         :root {
+            --001: #414141;
+            --101: #898989;
+            --201: #E4E4E4;
+            --301: #FFFFFF;
+            --002: #151C32;
+            --102: #4A5A79;
+            --202: #A7AAB2;
+            --302: #D3D5D8;
+            --black: #000000;
+            --gris: #C4C4C4;
+            --gris_medio_claro: #F1F1F1;
+            --gris_oscuro: #5E5E5E;
+            --gris_blanco: #FFFFFF;
+            --gris_medio: #9A9A9A;
+            --gris_claro: #F1F1F1;
+            --small: 15px;
+            --medium: 20px;
+            --long: 50px;
+            --primaryBlue: #151C32;
+            --primaryBrown: #AC6A4D;
+            --primaryGray: #E6E2D4;
+            --primaryPink: #F4EDEA;
+            --secondaryBlue: #4A5A79;
+            --secondaryPink: #E8DBAE;
+            --secondaryWhite: #FFFFFF;
+       }
+       .navbar-collapse{
+           flex-grow: 0;
+           margin-right: 15px;
+       }
+       .navbar-brand{
+           margin-left:0px;
+           padding-left: 15px;
+           padding-right: 10px;
+       }
+       @media (min-width:768px){
+           .navbar-brand{
+           margin-right: -300px;
+           padding-left: 15px;
+           padding-right: 0px;
+           }
+       }
+       @media (min-width:992px){
+           .navbar-brand{
+           margin-right: -50px;
+           padding-left: 15px;
+           padding-right: 0px;
+           }
+       }
+       @media (min-width:1280px){
+           .navbar-brand{
+           margin-right: -100px;
+           padding-left: 15px;
+           padding-right: 0px;
+           }
+       }
+       .dropdown-country{
+           padding-left: 10px ;
+
+       }
+       #header img {
+       width: 40px;
+       object-fit: cover;
+       }
+       #fondo  img{
+        max-width: 100%;
+        height: auto;
+        margin-left: -12px;
+       }
+
+       #filtros3 .boton1 {
+            background-color: var(--primaryBrown);
+            border-color: transparent;
+            background: #FFFFFF;
+            color: #AC6A4D;
+            border: 2px solid #AC6A4D;
+            padding: 0.5rem;
+            box-sizing: border-box;
+            border-radius: 8px;
+            width: 110px;
+
+        }
+
+        #filtros3 .boton1:hover {
+            background-color: var(--primaryPink);
+            color: var(--primaryBlue);
+            border-color: transparent;
+        }
+
+        #filtros3 .boton2 {
+            background-color: var(--primaryBrown);
+            border-color: transparent;
+            background: #AC6A4D;
+            border-radius: 8px;
+            border: 2px solid #AC6A4D;
+            box-sizing: border-box;
+            width: 110px;
+        }
+
+        #filtros3 .boton2:hover {
+            background-color: var(--primaryPink);
+            color: var(--primaryBlue);
+            border-color: transparent;
+        }
+        #filtros3 form {
+        width: 250px;
+        margin: 0 auto;
+        height: 50px;
+    }
+
+    #filtros3 form p {
+        text-align: center;
+        }
+
+    #filtros3 form label {
+        font-size: 20px;
+    }
+
+    #filtros3 input[type="radio"] {
+        display: none;
+    }
+
+    #filtros3 label {
+        color: #F4EDEA;
+    }
+
+    #filtros3 .clasificaciones {
+        direction: rtl;
+        unicode-bidi: bidi-override;
+    }
+
+    #filtros3 label:hover,
+    label:hover ~ label {
+        color: #E8DBAE;
+    }
+
+    #filtros3 input[type="radio"]:checked ~ label {
+        color: #E8DBAE;
+    }
+    #filtros3 .card2{
+          box-shadow: 8px 8px #AC6A4D;
+
+      }
+
+      .footer-clean {
+        padding:50px 0;
+        background-color:#151C32;
+        color: #fff;;
+        }
+
+        .footer-clean h3 {
+        margin-top:0;
+        margin-bottom:12px;
+        font-weight:bold;
+        font-size:16px;
+        }
+
+        .footer-clean ul {
+        padding:0;
+        list-style:none;
+        line-height:1.6;
+        font-size:14px;
+        margin-bottom:0;
+        }
+
+        .footer-clean ul a {
+        color:inherit;
+        text-decoration:none;
+        opacity:0.8;
+        }
+
+        .footer-clean ul a:hover {
+        opacity:1;
+        }
+
+        .footer-clean .item.social {
+        text-align:center;
+        }
+
+        @media (max-width:767px) {
+        .footer-clean .item {
+            text-align:center;
+            padding-bottom:20px;
+        }
+        }
+
+        @media (max-width: 768px) {
+        .footer-clean .item.social {
+            text-align:center;
+        }
+        }
+
+        .footer-clean .item.social > a {
+        font-size:24px;
+        width:40px;
+        height:40px;
+        line-height:40px;
+        display:inline-block;
+        text-align:center;
+        border-radius:50%;
+        border:1px solid #ccc;
+        margin-left:10px;
+        margin-top:22px;
+        color:inherit;
+        opacity:0.75;
+        }
+
+        .footer-clean .item.social > a:hover {
+        opacity:0.9;
+        }
+
+        @media (max-width:991px) {
+        .footer-clean .item.social > a {
+            margin-top:40px;
+        }
+        }
+
+        @media (max-width:767px) {
+        .footer-clean .item.social > a {
+            margin-top:10px;
+        }
+        }
+
+        .footer-clean .copyright {
+        margin-top:14px;
+        margin-bottom:0;
+        font-size:13px;
+        opacity:0.6;
+        }
+    </style>
+  </head>
+
+      <!--Menu-->
+  <section>
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container ps-1 ps-lg-3 ps-sm-0">
+            <a class="navbar-brand ps-4 ps-sm-0" href="#"><img src="../assets/Iconos/headerMB.svg" alt="logo" class="w-100 h-100"></a>
+
+                <li class="nav-link dropdown-country nav-item dropdown " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   <a style="color:#151C32" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="../assets/Iconos/icons8-mexico-48_preview_rev_1.png" alt=""></a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#" style="color:#151C32" ><img src="../assets/images/icons8-peru-48.png"/></a></li>
+                        <li><a class="dropdown-item" href="#" style="color:#151C32"><img src="../assets/images/chile_logo.jpg"/></a></li>
+                    </ul>
+
+                </li>
+                <button class="navbar-toggler bg-dark ms-4 mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        <div class="collapse navbar-collapse ps-4 ps-sm-0" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="../app/inicioMB.component.html" style="color:#151C32">Inicio</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" style="color:#151C32" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Programas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#" style="color:#151C32">Individuales</a></li>
+                        <li><a class="dropdown-item" href="#" style="color:#151C32">Grupales</a></li>
+
+                    </ul>
+              </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:#151C32">Precios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:#151C32">Especialistas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:#151C32">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:#151C32">Marketplace</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a style="color:#AC6A4D" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       <u>Ingresar</u>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#" style="color:#151C32" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Iniciar sesión</a></li>
+                        <li><a class="dropdown-item" href="#" style="color:#151C32">Registrarse</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn me-md-2 text-white" type="button" style="background: #AC6A4D;" disabled>Reservar</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+</section>
+  <!--/Menu-->
+   <!--Contenedor Filtros-->
+   <section id="fondo">
+    <div class="container">
+
+            <div class="row"></div><br/><br/><br/><br/><br/><br/>
+            <div class="row  px-0">
+
+                <div class="col-12 col-md-12  col-lg-7 offset-lg-3">
+                    <h2 class="text-center" style="font-family: 'Montserrat';font-style: normal;font-weight: 400;font-size: 50px;color:#151C32;">Encontramos especialistas </h2>
+
+                </div>
+                <div class="col-12 col-md-12  col-lg-7 offset-lg-3 ps-4">
+                    <h2 class="text-center" style="font-family: 'Bodoni 72';font-weight: 400;font-size: 50px;color:#151C32;"><i >indicados para ti</i> </h2>
+                </div>
+                <div class="col-10 col-md-12  col-lg-8 offset-lg-2 ps-5 ps-lg-2">
+                    <p class="text-center" style="font-family: 'Bodoni 72';font-weight: 700;font-size: 30px;color:#151C32;">
+                        El algoritmo ha encontrado psicólogos que van contigo.
+                        Elige a uno de ellos para reservar una cita.
+                     </p>
+                </div>
+            </div>
+            <div class="row"></div><br/><br/>
+            <div class="row"></div><br/>
+
+
+
+        </div>
+
+
+</section><br/>
+  <!--/Contenedor Filtros-->
+  <!--Pregunta 2 Filtro-->
+    <section >
+            <div class="container" id="filtros3">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 p-3">
+                        <div class="card text-center mx-auto p-2 mb-3 bg-white rounded pb-3 pe-3" style="width: 300px; border-radius: 8px; border: 2px solid #AC6A4D; box-sizing: border-box;">
+                            <div class="card card2">
+                            <img src="../assets/images/isabella mauro psicologa mb 1.jpg" class="card-img-top " alt="Isabella Mauro">
+
+                            <div class="card-body col-12 pb-0">
+                                <h5 class="pt-2 pb-0 col-12" style="color: #151C32; font-family: Montserrat; font-weight: 400; font-size: 25px;">Isabella <b><i style="font-weight: 400; font-size: 30px; line-height: 61px; ">Mauro</i></b></h5>
+                                <p class="col-12" style="color: #151C32; font-family: Montserrat; font-style: normal; font-weight: 400; font-size: 25px;">Médico Psiquiatra</p>
+                            </div>
+                            <div class="card-body col-12 pb-0">
+                                <form class="clasificaciones">
+                                    <input type="radio" name="rate" id="rate-1"/>
+                                    <label  for="rate-1" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-2"/>
+                                    <label for="rate-2" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-3"/>
+                                    <label for="rate-3" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-4"/>
+                                    <label for="rate-4" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-5"/>
+                                    <label for="rate-5" class="fas fa-star"></label>
+                                </form>
+                            </div>
+                            <div class="card-body">
+                                    <a href="../app/especialista.component.html" type="button" href="#" class="btn boton1">Ver perfil</a>
+                                    <a href="../app/planyHorario.component.html" type="button" href="#" class="btn boton2">Comprar</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 p-3">
+                        <div class="card text-center mx-auto p-2 mb-3 bg-white rounded pb-3 pe-3" style="width: 300px; border-radius: 8px; border: 2px solid #AC6A4D; box-sizing: border-box;">
+                            <div class="card card2">
+                            <img src="../assets/images/Alejandra Pacchioni psicologa foto mb 2.jpg" class="card-img-top " alt="Isabella Mauro">
+
+                            <div class="card-body col-12 pb-0">
+                                <h5 class="pt-2 pb-0 col-12" style="color: #151C32; font-family: Montserrat; font-weight: 400; font-size: 25px;">Alejandra <b><i style="font-weight: 400; font-size: 30px; line-height: 61px; ">Pachioni</i></b></h5>
+                                <p class="col-12" style="color: #151C32; font-family: Montserrat; font-style: normal; font-weight: 400; font-size: 25px;">Psicóloga</p>
+                            </div>
+                            <div class="card-body col-12 pb-0">
+                                <form class="clasificaciones">
+                                    <input type="radio" name="rate" id="rate-6"/>
+                                    <label  for="rate-6" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-7"/>
+                                    <label for="rate-7" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-8"/>
+                                    <label for="rate-8" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-9"/>
+                                    <label for="rate-9" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-10"/>
+                                    <label for="rate-10" class="fas fa-star"></label>
+                                </form>
+                            </div>
+                            <div class="card-body">
+                                    <a href="../app/especialista.component.html" type="button" href="#" class="btn boton1">Ver perfil</a>
+                                    <a href="../app/planyHorario.component.html" type="button" href="#" class="btn boton2">Comprar</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 p-3">
+                        <div class="card text-center mx-auto p-2 mb-3 bg-white rounded pb-3 pe-3" style="width: 300px; border-radius: 8px; border: 2px solid #AC6A4D; box-sizing: border-box;">
+                            <div class="card card2">
+                            <img src="../assets/images/ana paula ceballos foto 1.jpg" class="card-img-top " alt="Isabella Mauro">
+
+                            <div class="card-body col-12 pb-0">
+                                <h5 class="pt-2 pb-0 col-12" style="color: #151C32; font-family: Montserrat; font-weight: 400; font-size: 25px;">Ana Paula <b><i style="font-weight: 400; font-size: 30px; line-height: 61px; ">Ceballos</i></b></h5>
+                                <p class="col-12" style="color: #151C32; font-family: Montserrat; font-style: normal; font-weight: 400; font-size: 25px;">Médico Psiquiatra</p>
+                            </div>
+                            <div class="card-body col-12 pb-0">
+                                <form class="clasificaciones">
+                                    <input type="radio" name="rate" id="rate-11"/>
+                                    <label  for="rate-11" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-12"/>
+                                    <label for="rate-12" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-13"/>
+                                    <label for="rate-13" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-14"/>
+                                    <label for="rate-14" class="fas fa-star"></label>
+                                    <input type="radio" name="rate" id="rate-15"/>
+                                    <label for="rate-15" class="fas fa-star"></label>
+                                </form>
+                            </div>
+                            <div class="card-body">
+                                    <a href="../app/especialista.component.html" type="button" href="#" class="btn boton1">Ver perfil</a>
+                                    <a href="../app/planyHorario.component.html" type="button" href="#" class="btn boton2">Comprar</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+    </section><br/><br/><br/><br/><br/><br/>
+  <!--/Pregunta 2 filtro-->
+    <!--card reserva y duda-->
+  <section id="tarjetas2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 pb-4">
+              <div class="card" style="background: #4A5A79;height: auto;">
+                <div class="card-body ps-4 ps-lg-5">
+                  <h5 class="card-title  text-start pt-5" style="font-family: 'Montserrat';font-weight: 400;font-size: 60px; color: #FFFFFF;">¿Aún tienes dudas sobre la reserva?</h5>
+                </br>
+                  <button class="btn text-white" style="background: #AC6A4D;width: 193px;">Escríbenos</button>
+                </br></br></br></br>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card" style="background: #E6E2D4;height: auto;" >
+                    <div class="card-body ps-4 ps-lg-5">
+                      <h5 class="card-title text-start pt-5 " style="font-family: 'Montserrat';font-weight: 400;font-size: 60px; color: #151C32;">¿Ya estás llevando un tratamiento?</h5>
+                    </br>
+                      <button class="btn text-white" style="background: #151C32;width: 193px;">Ingresa aquí</button>
+                    </div>
+                  </br></br></br>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section></br></br></br></br></br></br>
+  <!--/card reserva y duda-->
+ <!--Footer-->
+ <footer>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Servicios</h3>
+                        <ul>
+                            <li><a href="#">Psicología</a></li>
+                            <li><a href="#">Psiquiatría</a></li>
+                            <li><a href="#">Actividad física</a></li>
+                            <li><a href="#">Programas individuales</a></li>
+                            <li><a href="#">Programas grupales</a></li>
+                            <li><a href="#">Precios</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Conócenos</h3>
+                        <ul>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Especialistas</a></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                            <li><a href="#">Términos y condiciones</a></li>
+                            <li><a href="#">Políticas y privacidad</a></li>
+                            <li><a href="#">Políticas de cookies</a></li>
+                            <li><a href="#">Libro de reclamaciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Cultiva tu Mente Bonita</h3>
+                        <ul>
+                            <li><a href="#">Trabaja con nosotros</a></li>
+                            <li><a href="#">Información para empresas</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social">
+
+                        <img src="../assets/images/facebook.png" alt="">
+                        <img src="../assets/images/instagram.png" alt="">
+                        <img src="../assets/images/Group 117.png" alt="">
+                        <p class="copyright">Mente Bonita © 2022</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </footer>
+  <!--/Footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
+
