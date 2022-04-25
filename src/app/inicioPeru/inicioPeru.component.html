@@ -10,23 +10,6 @@
     <link rel="stylesheet" href="/src/dist/css/dd.css?v=4.0">
     <link rel="stylesheet" type="text/css" href="/src/dist/css/flags.css?v=1.0" />
     <title>Mente Bonita</title>
-    <script>
-
-      function showMe(evt) {
-        console.log("evt.value ",evt.value);
-      }
-      function makeDd() {
-        'use strict';
-        let json = new Function(`return ${document.getElementById('json_data').innerHTML}`)();
-
-        MsDropdown.make("#json_dropdown", {
-          byJson: {
-            data: json, selectedIndex:0
-          }
-        });
-      }
-
-      </script>
     <style>
         :root {
             --001: #414141;
@@ -238,12 +221,9 @@
     <nav id="header" class="navbar navbar-expand-lg navbar-dark fixed-top pt-0" style="background: #ca9f8dde;">
       <div class="container ps-0">
           <a class="navbar-brand ps-4 ps-sm-0" href="#"><img src="/src/assets/Iconos/headerMB.svg" alt="logo" class="w-100 h-100"></a>
-          <select style="width: 140px;box-shadow: none;text-decoration: none;justify-content: center;" name="countries" id="countries" is="ms-dropdown" data-child-height="180" class="nav-item dropdown">
-           <option value='pe' data-image-css="flag pe" data-title="Peru">Peru</option>
-           <option value='ar' data-image-css="flag ar" data-title="Argentina">Argentina</option>
-           <option value='mx' data-image-css="flag mx" data-title="Mexico">Mexico</option>
-           <option value='pa' data-image-css="flag cl" data-title="Chile">Chile</option>
-
+          <select style="width: 120px;box-shadow: none;" name="countries" id="countries" is="ms-dropdown" data-child-height="180" class="">
+          <a href="./inicioPeru.component.html"><option  data-image-css="flag pe" >Peru</option></a>
+         <option value="" data-image-css="flag mx" data-title="Mexico"> <a href="../apoyoEmpresas/apoyoEmpresas.component.html">Mexico</a></option>
          </select>
               <button class="navbar-toggler bg-dark ms-4 mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
