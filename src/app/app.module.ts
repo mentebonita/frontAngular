@@ -46,9 +46,11 @@ import { UsuarioInformesComponent } from './usuarioInformes/usuarioInformes.comp
 import { UsuarioMensajesComponent } from './usuarioMensajes/usuarioMensajes.component';
 import { UsuarioObjetivosComponent } from './usuarioObjetivos/usuarioObjetivos.component';
 import { UsuarioPagosComponent } from './usuarioPagos/usuarioPagos.component';
+import { ProgramaIndividualMexicoComponent } from './programaIndividualMexico/programaIndividualMexico.component';
+import { ProgramaGrupalMexicoComponent } from './programaGrupalMexico/programaGrupalMexico.component';
 
 @NgModule({
-  declarations: [
+  declarations: [		
     AppComponent,
     InicioPeruComponent,
       InicioPeruComponent,
@@ -93,7 +95,9 @@ import { UsuarioPagosComponent } from './usuarioPagos/usuarioPagos.component';
       UsuarioInformesComponent,
       UsuarioMensajesComponent,
       UsuarioObjetivosComponent,
-      UsuarioPagosComponent
+      UsuarioPagosComponent,
+      ProgramaIndividualMexicoComponent,
+      ProgramaGrupalMexicoComponent
    ],
   imports: [
     BrowserModule,
