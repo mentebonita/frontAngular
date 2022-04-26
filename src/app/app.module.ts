@@ -8,8 +8,6 @@ import { InicioMexicoComponent } from './inicioMexico/inicioMexico.component';
 import { BlogFinalComponent } from './blogFinal/blogFinal.component';
 import { CarruselFinComponent } from './carruselFin/carruselFin.component';
 import { ContenedorTitleComponent } from './contenedorTitle/contenedorTitle.component';
-import { ProgramaIndividualComponent } from './programaIndividual/programaIndividual.component';
-import { ProgramaGrupalComponent } from './programaGrupal/programaGrupal.component';
 import { ApoyoEmpresasComponent } from './apoyoEmpresas/apoyoEmpresas.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { ContenidoBlogComponent } from './contenidoBlog/contenidoBlog.component';
@@ -48,9 +46,10 @@ import { UsuarioObjetivosComponent } from './usuarioObjetivos/usuarioObjetivos.c
 import { UsuarioPagosComponent } from './usuarioPagos/usuarioPagos.component';
 import { ProgramaIndividualMexicoComponent } from './programaIndividualMexico/programaIndividualMexico.component';
 import { ProgramaGrupalMexicoComponent } from './programaGrupalMexico/programaGrupalMexico.component';
+import { ProgramaIndividualPeruComponent } from './programaIndividualPeru/programaIndividualPeru.component';
 
 @NgModule({
-  declarations: [		
+  declarations: [
     AppComponent,
     InicioPeruComponent,
       InicioPeruComponent,
@@ -58,8 +57,6 @@ import { ProgramaGrupalMexicoComponent } from './programaGrupalMexico/programaGr
       BlogFinalComponent,
       CarruselFinComponent,
       ContenedorTitleComponent,
-      ProgramaIndividualComponent,
-      ProgramaGrupalComponent,
       ApoyoEmpresasComponent,
       CalendarComponent,
       ContenidoBlogComponent,
@@ -97,7 +94,8 @@ import { ProgramaGrupalMexicoComponent } from './programaGrupalMexico/programaGr
       UsuarioObjetivosComponent,
       UsuarioPagosComponent,
       ProgramaIndividualMexicoComponent,
-      ProgramaGrupalMexicoComponent
+      ProgramaGrupalMexicoComponent,
+      ProgramaIndividualPeruComponent
    ],
   imports: [
     BrowserModule,
