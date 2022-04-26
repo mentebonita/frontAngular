@@ -47,9 +47,20 @@ import { UsuarioPagosComponent } from './usuarioPagos/usuarioPagos.component';
 import { ProgramaIndividualMexicoComponent } from './programaIndividualMexico/programaIndividualMexico.component';
 import { ProgramaGrupalMexicoComponent } from './programaGrupalMexico/programaGrupalMexico.component';
 import { ProgramaIndividualPeruComponent } from './programaIndividualPeru/programaIndividualPeru.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { CreaTuPropioBienestarComponent } from './creaTuPropioBienestar/creaTuPropioBienestar.component';
+import { BannerComponent } from './banner/banner.component';
+import { ConoceNuestrosServiciosComponent } from './conoceNuestrosServicios/conoceNuestrosServicios.component';
+import { QueDicenNuestrosClientesComponent } from './queDicenNuestrosClientes/queDicenNuestrosClientes.component';
+import { PorqueElegirnosComponent } from './porqueElegirnos/porqueElegirnos.component';
+import { ReservaTuCitaEnTresPasosComponent } from './ReservaTuCitaEnTresPasos/ReservaTuCitaEnTresPasos.component';
+import { AunTienesDudasComponent } from './AunTienesDudas/AunTienesDudas.component';
+import { ProgramasParaEmpresasComponent } from './programasParaEmpresas/programasParaEmpresas.component';
+import { GruposDeApoyoComponent } from './gruposDeApoyo/gruposDeApoyo.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [
+  declarations: [											
     AppComponent,
     InicioPeruComponent,
       InicioPeruComponent,
@@ -95,7 +106,18 @@ import { ProgramaIndividualPeruComponent } from './programaIndividualPeru/progra
       UsuarioPagosComponent,
       ProgramaIndividualMexicoComponent,
       ProgramaGrupalMexicoComponent,
-      ProgramaIndividualPeruComponent
+      ProgramaIndividualPeruComponent,
+      NavbarComponent,
+      CreaTuPropioBienestarComponent,
+      BannerComponent,
+      ConoceNuestrosServiciosComponent,
+      QueDicenNuestrosClientesComponent,
+      PorqueElegirnosComponent,
+      ReservaTuCitaEnTresPasosComponent,
+      AunTienesDudasComponent,
+      ProgramasParaEmpresasComponent,
+      GruposDeApoyoComponent,
+      FooterComponent
    ],
   imports: [
     BrowserModule,
