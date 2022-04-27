@@ -49,10 +49,8 @@ import { ProgramaGrupalMexicoComponent } from './programaGrupalMexico/programaGr
 import { ProgramaIndividualPeruComponent } from './programaIndividualPeru/programaIndividualPeru.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CreaTuPropioBienestarComponent } from './creaTuPropioBienestar/creaTuPropioBienestar.component';
-import { BannerComponent } from './banner/banner.component';
 import { ConoceNuestrosServiciosComponent } from './conoceNuestrosServicios/conoceNuestrosServicios.component';
 import { QueDicenNuestrosClientesComponent } from './queDicenNuestrosClientes/queDicenNuestrosClientes.component';
-import { PorqueElegirnosComponent } from './porqueElegirnos/porqueElegirnos.component';
 import { ReservaTuCitaEnTresPasosComponent } from './ReservaTuCitaEnTresPasos/ReservaTuCitaEnTresPasos.component';
 import { AunTienesDudasComponent } from './AunTienesDudas/AunTienesDudas.component';
 import { ProgramasParaEmpresasComponent } from './programasParaEmpresas/programasParaEmpresas.component';
@@ -60,7 +58,7 @@ import { GruposDeApoyoComponent } from './gruposDeApoyo/gruposDeApoyo.component'
 import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [											
+  declarations: [
     AppComponent,
     InicioPeruComponent,
       InicioPeruComponent,
@@ -109,7 +107,6 @@ import { FooterComponent } from './footer/footer.component';
       ProgramaIndividualPeruComponent,
       NavbarComponent,
       CreaTuPropioBienestarComponent,
-      BannerComponent,
       ConoceNuestrosServiciosComponent,
       QueDicenNuestrosClientesComponent,
       PorqueElegirnosComponent,
