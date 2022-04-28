@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InicioPeruComponent } from './inicioPeru/inicioPeru.component';
@@ -56,9 +56,10 @@ import { AunTienesDudasComponent } from './AunTienesDudas/AunTienesDudas.compone
 import { ProgramasParaEmpresasComponent } from './programasParaEmpresas/programasParaEmpresas.component';
 import { GruposDeApoyoComponent } from './gruposDeApoyo/gruposDeApoyo.component';
 import { FooterComponent } from './footer/footer.component';
+import { DanderasComponent } from './danderas/danderas.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     InicioPeruComponent,
       InicioPeruComponent,
@@ -114,11 +115,13 @@ import { FooterComponent } from './footer/footer.component';
       AunTienesDudasComponent,
       ProgramasParaEmpresasComponent,
       GruposDeApoyoComponent,
-      FooterComponent
+      FooterComponent,
+      DanderasComponent
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  public image!: string;
+  constructor() {
 
-  constructor() { }
+
+  }
 
   ngOnInit() {
+    this.image= '..//assets/headerMB.svg'
   }
 
 }

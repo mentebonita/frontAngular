@@ -1,0 +1,58 @@
+:root {
+  --001: #414141;
+  --101: #898989;
+  --201: #E4E4E4;
+  --301: #FFFFFF;
+  --002: #151C32;
+  --102: #4A5A79;
+  --202: #A7AAB2;
+  --302: #D3D5D8;
+  --black: #000000;
+  --gris: #C4C4C4;
+  --gris_medio_claro: #F1F1F1;
+  --gris_oscuro: #5E5E5E;
+  --gris_blanco: #FFFFFF;
+  --gris_medio: #9A9A9A;
+  --gris_claro: #F1F1F1;
+  --small: 15px;
+  --medium: 20px;
+  --long: 50px;
+}
+.navbar-collapse{
+ flex-grow: 0;
+ margin-right: 15px;
+}
+.navbar-brand{
+ margin-left:0px;
+ padding-left: 15px;
+ padding-right: 10px;
+}
+@media (min-width:768px){
+ .navbar-brand{
+ margin-right: -300px;
+ padding-left: 15px;
+ padding-right: 0px;
+ }
+}
+@media (min-width:992px){
+ .navbar-brand{
+ margin-right: -50px;
+ padding-left: 15px;
+ padding-right: 0px;
+ }
+}
+@media (min-width:1280px){
+ .navbar-brand{
+ margin-right: -100px;
+ padding-left: 15px;
+ padding-right: 0px;
+ }
+}
+.dropdown-country{
+ padding-left: 16px ;
+
+}
+#header img {
+width: 40px;
+object-fit: cover;
+}

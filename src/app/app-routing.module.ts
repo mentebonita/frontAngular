@@ -1,13 +1,9 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { InicioPeruComponent } from './inicioPeru/inicioPeru.component';
-import { PreguntasFiltroFinalComponent } from './preguntasFiltroFinal/preguntasFiltroFinal.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
-  {
-    path:'',
-    component: InicioPeruComponent
-  },
+
 
 
 
