@@ -57,9 +57,17 @@ import { ProgramasParaEmpresasComponent } from './programasParaEmpresas/programa
 import { GruposDeApoyoComponent } from './gruposDeApoyo/gruposDeApoyo.component';
 import { FooterComponent } from './footer/footer.component';
 import { DanderasComponent } from './danderas/danderas.component';
+import { ProgramaGrupalPeruComponent } from './programaGrupalPeru/programaGrupalPeru.component';
+import { TipoSesionesComponent } from './tipoSesiones/tipoSesiones.component';
+import { PerfilAdministradorComponent } from './perfilAdministrador/perfilAdministrador.component';
+import { PerfilUsuarioComponent } from './perfilUsuario/perfilUsuario.component';
+import { CrearEspecialistaComponent } from './crearEspecialista/crearEspecialista.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideFunctions,getFunctions } from '@angular/fire/functions';
 
 @NgModule({
-  declarations: [	
+  declarations: [						
     AppComponent,
     InicioPeruComponent,
       InicioPeruComponent,
@@ -116,12 +124,19 @@ import { DanderasComponent } from './danderas/danderas.component';
       ProgramasParaEmpresasComponent,
       GruposDeApoyoComponent,
       FooterComponent,
-      DanderasComponent
+      DanderasComponent,
+      ProgramaGrupalPeruComponent,
+      TipoSesionesComponent,
+      PerfilAdministradorComponent,
+      PerfilUsuarioComponent,
+      CrearEspecialistaComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFunctions(() => getFunctions())
   ],
   providers: [],
   bootstrap: [AppComponent]
