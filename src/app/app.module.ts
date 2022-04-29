@@ -57,6 +57,9 @@ import { ProgramasParaEmpresasComponent } from './programasParaEmpresas/programa
 import { GruposDeApoyoComponent } from './gruposDeApoyo/gruposDeApoyo.component';
 import { FooterComponent } from './footer/footer.component';
 import { DanderasComponent } from './danderas/danderas.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideFunctions,getFunctions } from '@angular/fire/functions';
 
 @NgModule({
   declarations: [	
@@ -121,7 +124,9 @@ import { DanderasComponent } from './danderas/danderas.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFunctions(() => getFunctions())
   ],
   providers: [],
   bootstrap: [AppComponent]

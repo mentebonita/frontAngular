@@ -76,3 +76,8 @@ build/
 ### VS Code ###
 .vscode/
 >>>>>>> 8f78ddbb4e56779d029e4e413827584ea476ad08
+
+# Firebase
+.firebase
+*-debug.log
+.runtimeconfig.json
