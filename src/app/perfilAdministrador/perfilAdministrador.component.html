@@ -29,4 +29,10 @@
     </tr>
   </tbody>
 </table>
+<ul>
+  <li class="text" *ngFor="let item of items | async">
+    <!--Aqui se llama el objeto y el cambo que esta en firebase-->
+    {{item.name}}
+  </li>
+</ul>
 <button routerLink="/crear-especialista">Agregar Especialista</button>

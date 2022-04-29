@@ -1,7 +1,11 @@
+//modulos
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+//Componentes
 import { AppComponent } from './app.component';
 import { InicioPeruComponent } from './inicioPeru/inicioPeru.component';
 import { InicioMexicoComponent } from './inicioMexico/inicioMexico.component';
@@ -57,20 +61,16 @@ import { ProgramasParaEmpresasComponent } from './programasParaEmpresas/programa
 import { GruposDeApoyoComponent } from './gruposDeApoyo/gruposDeApoyo.component';
 import { FooterComponent } from './footer/footer.component';
 import { DanderasComponent } from './danderas/danderas.component';
-<<<<<<< HEAD
 import { ProgramaGrupalPeruComponent } from './programaGrupalPeru/programaGrupalPeru.component';
 import { TipoSesionesComponent } from './tipoSesiones/tipoSesiones.component';
 import { PerfilAdministradorComponent } from './perfilAdministrador/perfilAdministrador.component';
 import { PerfilUsuarioComponent } from './perfilUsuario/perfilUsuario.component';
 import { CrearEspecialistaComponent } from './crearEspecialista/crearEspecialista.component';
-=======
->>>>>>> a3b915c09197446135770bde081608e2ee911e39
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
-import { environment } from '../environments/environment';
-import { provideFunctions,getFunctions } from '@angular/fire/functions';
+import { environment } from 'src/environments/environment.prod';
+
 
 @NgModule({
-  declarations: [						
+  declarations: [
     AppComponent,
     InicioPeruComponent,
       InicioPeruComponent,
@@ -138,8 +138,8 @@ import { provideFunctions,getFunctions } from '@angular/fire/functions';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideFunctions(() => getFunctions())
+    AngularFirestoreModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
   bootstrap: [AppComponent]

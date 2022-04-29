@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-crearunaCuenta',
@@ -6,8 +8,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./crearunaCuenta.component.scss']
 })
 export class CrearunaCuentaComponent implements OnInit {
-
-  constructor() { }
 
   ngOnInit() {
   }
