@@ -57,11 +57,14 @@ import { ProgramasParaEmpresasComponent } from './programasParaEmpresas/programa
 import { GruposDeApoyoComponent } from './gruposDeApoyo/gruposDeApoyo.component';
 import { FooterComponent } from './footer/footer.component';
 import { DanderasComponent } from './danderas/danderas.component';
+<<<<<<< HEAD
 import { ProgramaGrupalPeruComponent } from './programaGrupalPeru/programaGrupalPeru.component';
 import { TipoSesionesComponent } from './tipoSesiones/tipoSesiones.component';
 import { PerfilAdministradorComponent } from './perfilAdministrador/perfilAdministrador.component';
 import { PerfilUsuarioComponent } from './perfilUsuario/perfilUsuario.component';
 import { CrearEspecialistaComponent } from './crearEspecialista/crearEspecialista.component';
+=======
+>>>>>>> a3b915c09197446135770bde081608e2ee911e39
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideFunctions,getFunctions } from '@angular/fire/functions';
