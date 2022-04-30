@@ -726,18 +726,18 @@
                         <div>
                           <h1 class="modal-title" id="exampleModalToggleLabel" style="font-family: Montserrat; font-style: normal; font-weight: normal; font-size: 65px; line-height: 90px; color: #151C32; ">Crea una cuenta</h1><br />
                         </div>
-                        <form>
+                        <form [FormGroup]="crearUsuario" (ngSubmit)="agregarUsuario()">
                           <div class="modal-body">
-                            <input type="text" class="form-control" id="recipient-name" style="background: #E6E2D4; font-family: Montserrat; font-style: normal; font-weight: bold; font-size: 16px; line-height: 20px;" placeholder="Nombres">
+                            <input type="text" formControlName="nombres" class="form-control" id="recipient-name" style="background: #E6E2D4; font-family: Montserrat; font-style: normal; font-weight: bold; font-size: 16px; line-height: 20px;" placeholder="Nombres">
                           </div>
                           <div class="modal-body">
-                            <input type="text" class="form-control" id="recipient-name" style="background: #E6E2D4; font-family: Montserrat; font-style: normal; font-weight: bold; font-size: 16px; line-height: 20px;" placeholder="Apellidos">
+                            <input type="text" formControlName="apellidos" class="form-control" id="recipient-name" style="background: #E6E2D4; font-family: Montserrat; font-style: normal; font-weight: bold; font-size: 16px; line-height: 20px;" placeholder="Apellidos">
                           </div>
                           <div class="modal-body">
-                            <input type="text" class="form-control" id="recipient-name" style="background: #E6E2D4; font-family: Montserrat; font-style: normal; font-weight: bold; font-size: 16px; line-height: 20px;" placeholder="Correo">
+                            <input type="text" formControlName="correo" class="form-control" id="recipient-name" style="background: #E6E2D4; font-family: Montserrat; font-style: normal; font-weight: bold; font-size: 16px; line-height: 20px;" placeholder="Correo">
                           </div>
                           <div class="modal-body">
-                            <input type="text" class="form-control" id="recipient-name" style="background:#E6E2D4;font-family: Montserrat; font-style: normal; font-weight: bold; font-size: 16px; line-height: 20px;" placeholder="Contraseña">
+                            <input type="text" formControlName="password" class="form-control" id="recipient-name" style="background:#E6E2D4;font-family: Montserrat; font-style: normal; font-weight: bold; font-size: 16px; line-height: 20px;" placeholder="Contraseña">
                           </div>
 
                           <div class="row modal-body justify-content-center">

@@ -5,6 +5,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import {ReactiveFormsModule} from '@angular/forms';
 //Componentes
 import { AppComponent } from './app.component';
 import { InicioPeruComponent } from './inicioPeru/inicioPeru.component';
@@ -139,6 +140,7 @@ import { environment } from 'src/environments/environment.prod';
     AppRoutingModule,
     NgbModule,
     AngularFirestoreModule,
+    ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],

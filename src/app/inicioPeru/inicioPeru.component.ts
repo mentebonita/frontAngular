@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-inicioPeru',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inicioPeru.component.scss']
 })
 export class InicioPeruComponent implements OnInit {
-
-  constructor() { }
-
+  crearUsuario: FormGroup;
+  submitted = false;
+  constructor(private fb:FormBuilder) {
+    this.crearUsuario= this.fb.group({
+      nombres: ['',Validators.required],
+      apellidos: ['',Validators.required],
+      correo: ['',Validators.required],
+      password: ['',Validators.required]
+    })
+  }
   ngOnInit() {
   }
 
+  agregarUsuario(){
+    console.log(this.crearUsuario);
+  }
 }
